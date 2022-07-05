@@ -3,7 +3,10 @@ html, body {
     margin: 20px;
 }
 
-/*Mes flex ready-to-use*/
+/*------------------*/
+/*ready-to-use*/
+/*------------------*/
+
 .sansMarge {
     line-height:0px;
 }
@@ -45,7 +48,11 @@ html, body {
     align-items: flex-end;
 }
 
+
+/*------------------*/
 /*Propriétés Globale*/
+/*------------------*/
+
 
 h1 {
     font-size: 25px;
@@ -79,7 +86,11 @@ h1 {
     font-weight: bold;
 }
 
+
+/*------------------*/
 /* Propriété Header*/
+/*------------------*/
+
 
 .blocLogoNav {
     width: 100%;
@@ -96,19 +107,38 @@ h1 {
 
 .navLien {
     list-style: none;
-    width: 30%;
+    width: 20%;
     height: 50px;
     align-items: center;
     display: flex;
-    justify-content: flex-end;
-    margin-right: 10px;
+    justify-content: space-around;
 }
 
-li {
+a {
+    border-top: 5px solid ;
+    border-color: transparent;
+    height: 110px;
     display: flex;
+    align-items: center;
+    padding: 10px;
+    font-weight: 700;
+    transition: all .2s ease-in-out; 
+    text-decoration: none;
 }
 
+a:hover {
+    border-top: 5px solid ;
+    border-color: #0065fc;
+    color: #0065fc;
+    transition: all .2s ease-in-out; 
+}
+
+
+
+/*------------------*/
 /*Search Barre Entière*/
+/*------------------*/
+
 
 .searchBarComplete {
     display: flex;
@@ -118,7 +148,11 @@ li {
     height: 50px;
 }
 
+
+
 /*Icone de géolocalisation*/
+
+
 
 .geoIcon {
     width: 50px;
@@ -131,20 +165,28 @@ li {
     border-radius: 20px 0 0 20px;
 }
 
+
+/*------------------*/
 /*Search barre input texte*/
+/*------------------*/
+
 
 .barreDeRecherche {
     height: 50px;
     width: 230px;
     padding-left: 15px;
-    border: 1px solid #F2F2F2;
+    border: 3px solid #F2F2F2;
 }
 
+
+/*------------------*/
 /*Boutons de recherche*/
+/*------------------*/
+
 
 .boutondeRecherche {
     height: 50px;
-    width: 200px;
+    width: 180px;
     border-radius: 0 20px 20px 0;
     cursor: pointer;
     color: white;
@@ -157,12 +199,16 @@ li {
     content: "Rechercher";
 }
 
+
+/*------------------*/
 /*Les filtres*/*
+/*------------------*/
+
 
 .filtreglobal {
     display: flex;
     margin: 25px 0;
-    width: 75%;
+    width: 60%;
     align-items: flex-start;
     justify-content: space-around;
 }
@@ -181,6 +227,13 @@ li {
     background-color: white;
     border-radius: 30px 30px;
     width: auto;
+    transition: all .2s ease-in-out; 
+}
+
+.filtreUnitaire:hover {
+    transition: all .2s ease-in-out; 
+    transform: scale(1.1);
+    box-shadow: 2px 2px 2px 1px rgb(172, 172, 172);
 }
 
 .iconsFiltres {
@@ -202,7 +255,11 @@ li {
     padding: 0 20px;
 }
 
+
+/*------------------*/
 /* Infobulle et infobulle supplémentaire*/
+/*------------------*/
+
 
 .infoSupplement {
     display: flex;
@@ -210,7 +267,7 @@ li {
 }
 
 .infoBulle {
-    border: 2px solid #f2f2f2;
+    border: 3px solid #f2f2f2;
     width: 20px;
     height: 20px;
     display: flex;
@@ -232,6 +289,7 @@ li {
     margin-bottom: 35px;
 }
 
+/*------------------*/
 /*Hebergements Box*/
 /*------------------*/
 
@@ -276,6 +334,7 @@ li {
     margin-left: 30px;
 }
 
+/*------------------*/
 /*Les plus Populaires Box*/
 /*------------------*/
 
@@ -387,9 +446,9 @@ li {
 }
 
 
-
+/*------------------*/
 /*Footer*/
-
+/*------------------*/
 
 
 .footerDisposition {
@@ -401,17 +460,18 @@ li {
 }
 
 
-
+/*------------------*/
 /*------------------*/
 /*Partie Responsive MOBILE*/
 /*------------------*/
-
+/*------------------*/
 
 
 
 @media (max-width: 768px) { 
 
-/* Logo et Barre de navigation */ 
+/*------------------*/
+/* Logo et Barre de navigation MOBILE */ 
 /*------------------*/
 
 .blocLogoNav { 
@@ -421,23 +481,19 @@ li {
 }
 
 .navLien {
-    justify-content:center;
+    justify-content:s;
     margin: 0px;
     width: 100%;
 }
-ul {
-    margin:  auto;
-    display: flex;
-    justify-content: space-around;
-    padding: 80px ;
-}
+
 
 .logo {
     justify-content: center;
     align-items: center;
 }
 
-/*Barre de recherche*/
+/*------------------*/
+/*Barre de recherche MOBILE*/
 /*------------------*/
 
 .searchBarComplete {
@@ -463,8 +519,8 @@ ul {
 }
 
 
-
-/* Partie Filtres */
+/*------------------*/
+/* Partie Filtres MOBILE */
 /*------------------*/
 
 .filtreglobal {
@@ -474,7 +530,8 @@ ul {
     width: 100%;
 }
 
-/* Hebergements + Populaires*/
+/*------------------*/
+/* Hebergements + Populaires MOBILE*/
 /*------------------*/
 
 .HebergementsEtPopulaire {
@@ -483,14 +540,18 @@ ul {
     
 }
 
-/*Populaires */
+/*------------------*/
+/*Populaires MOBILE */
 /*------------------*/
 
 .populaireBox {
     width: 100%;
 }
 
-/*Hebergement*/
+/*------------------*/
+/*Hebergement MOBILE*/
+/*------------------*/
+
 .hebergementBox {
     width: 100%;
     height: auto;
@@ -517,7 +578,8 @@ ul {
     font-size: 100%;
 }
 
-/*Activités*/
+/*------------------*/
+/*Activités MOBILE*/
 /*------------------*/
 
 .activiteBox {
@@ -569,8 +631,8 @@ h3 {
     height: 240px;
 }
 
-
-/*Footer*/
+/*------------------*/
+/*Footer MOBILE*/
 /*------------------*/
 
 .footerDisposition {
@@ -579,15 +641,18 @@ h3 {
 }
 }
 
-
+/*------------------*/
 /*------------------*/
 /*Partie responsive TABLETTE*/
 /*------------------*/
-
+/*------------------*/
 
 @media all and (min-width: 768px) and (max-width: 992px){ 
 
 
+/*------------------*/
+/*Filtre TABLETTE*/
+/*------------------*/
 
 
 .filtreglobal {
@@ -596,13 +661,17 @@ h3 {
 
   }
 
+/*------------------*/
   /*Hebergements Et populaire TABLETTE*/
+  /*------------------*/
 
   .HebergementsEtPopulaire {
     flex-direction: column-reverse;
 }
 
-/*Populaire*/
+/*------------------*/
+/*Populaire TABLETTE*/
+/*------------------*/
 
 .populaireBox {
     width: 100%;
@@ -616,7 +685,9 @@ h3 {
     
 }
 
+/*------------------*/
 /*Hebergements TABLETTE*/
+/*------------------*/
 
 .hebergementBox {
     width: 100%;
@@ -626,12 +697,14 @@ h3 {
 }
 
 
+/*------------------*/
 /*Activité TABLETTE*/
+/*------------------*/
+
 .activiteBox {
     height: auto;
     align-items: center;
     flex-wrap: wrap;
-
 }
 
 .activite14 {
@@ -653,7 +726,6 @@ h3 {
 
 .doublesimages2356 {
     width: 48%;
-
 }
 
 .images14 {
@@ -687,9 +759,6 @@ h3 {
     height: 55px;
     border-radius: 15px;
 }
-
-
-
 }
 
 
