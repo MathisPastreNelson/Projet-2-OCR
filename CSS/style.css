@@ -11,10 +11,21 @@ html, body {
     line-height:0px;
 }
 
+.miniMarge {
+    line-height: 20px;
+}
+
 .petiteMarge {
     line-height: 10px;
 }
 
+.margeNormalize {
+    line-height: 5px;
+}
+
+.marginZero {
+    margin: 5px 0;
+}
 
 .petiteMargeGauche {
     margin-left: 20px;
@@ -22,6 +33,11 @@ html, body {
 
 .petiteMargeTop {
     margin-top: 10px;
+}
+
+.petiteMargeBot {
+    margin-bottom: 15px;
+    margin-top: 3px;
 }
 
 .flexBetween {
@@ -87,6 +103,7 @@ h1 {
 }
 
 
+
 /*------------------*/
 /* Propriété Header*/
 /*------------------*/
@@ -107,24 +124,27 @@ h1 {
 
 .navLien {
     list-style: none;
-    width: 20%;
     height: 50px;
     align-items: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 a {
     border-top: 3px solid ;
     border-bottom: 3px solid;
     border-color: transparent;
-    height: 115px;
     display: flex;
+    width: 100%;
     align-items: center;
-    padding: 10px 40px;
+    padding: 15px 60px;
     font-weight: 400;
     transition: all .2s ease-in-out; 
     text-decoration: none;
+}
+
+.paddingLeft {
+    justify-content: end;
 }
 
 a:hover {
@@ -132,8 +152,8 @@ a:hover {
     border-bottom: 3px solid ;
     border-color: #0065fc;
     color: #0065fc;
-    transition: all .2s ease-in-out; 
     border-bottom: transparent;
+    height: 120px;
 }
 
 
@@ -145,10 +165,16 @@ a:hover {
 
 .searchBarComplete {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    width: 480px;
-    height: 50px;
+    width: 40%;
+    max-width: 600px;
+    height: 46px;
+    margin-top: 20px;
+    border: 5px solid #f2f2f2;
+    border-radius: 15px;
+    border-right: none;
+    border-left: none;
 }
 
 
@@ -158,14 +184,15 @@ a:hover {
 
 
 .geoIcon {
-    width: 50px;
-    height: 50px;
+    width: 52px;
+    height: 52px;
     color: black;
     background-color: #f2f2f2;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 15px 0 0 15px;
+    min-width: 50px;
 }
 
 
@@ -176,10 +203,9 @@ a:hover {
 
 .barreDeRecherche {
     height: 50px;
-    width: 230px;
-    padding-left: 15px;
-    border: 3px solid #F2F2F2;
-    border-right: none;
+    width: 100%;
+    padding-left: 20px;
+    border: none;
 }
 
 
@@ -189,14 +215,19 @@ a:hover {
 
 
 .boutondeRecherche {
-    height: 50px;
-    width: 140px;
+    height: 56px;
+    width: 40%;
+    max-width: 280px;
+    min-width: 120px;
     border-radius: 0 15px 15px 0;
     cursor: pointer;
     color: white;
     background-color: #0065fc;
     font-size: large;
-    border-width: 0px;
+    border-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .boutondeRecherche::before {
@@ -222,6 +253,15 @@ a:hover {
     margin-right: 10px;
 }
 
+.doubleFiltre {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.doubleFiltre2 {
+    display: flex;
+}
+
 .filtreUnitaire {
     display: flex;
     align-items: center;
@@ -230,9 +270,8 @@ a:hover {
     border: 3px solid #f2f2f2;
     background-color: white;
     border-radius: 30px 30px;
-    width: auto;
     transition: all .2s ease-in-out; 
-    margin: 5px 5px;
+    margin: 3px 3px;
 }
 
 .filtreUnitaire:hover {
@@ -255,11 +294,10 @@ a:hover {
 }
 
 .textFiltres {
-    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 
@@ -302,7 +340,7 @@ a:hover {
 
 .hebergementBox {
     background-color: #F2F2F2;
-    border-radius: 20px;
+    border-radius: 30px;
     width: 65%;
     height: 710px;
     padding: 10px;
@@ -312,14 +350,16 @@ a:hover {
 .cadresDesHotels {
     width: 30%;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 30px;
     padding: 3px;
     box-shadow: 2px 2px 2px 1px rgb(172, 172, 172);
+    max-height: 246px;
+    min-height: 246px;
 }
 
 .ratioImgHebergement {
     width: 100%;
-    border-radius: 15px 15px 0 0;
+    border-radius: 30px 30px 0 0;
     height: 140px;
     object-fit: cover;
 }
@@ -347,7 +387,7 @@ a:hover {
 
 .populaireBox {
     background-color: #F2F2F2;
-    border-radius: 20px;
+    border-radius: 30px;
     width: 30%;
     height: 710px;
     padding: 10px;
@@ -368,18 +408,26 @@ a:hover {
     background-color: white;
     display: flex;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 30px;
     padding: 3px;
     width: 90%;
     box-shadow: 2px 2px 2px 1px rgb(172, 172, 172);
-    height: 153px;
+    height: 160px;
 }
 
 .imagesPopulaire{
-    height: 150px;
-    width: 150px;
-    border-radius: 20px 0 0 20px;
+    height: 160px;
+    width: 40%;
+    max-width: 160px;
+    border-radius: 30px 0 0 30px;
     object-fit: cover;
+}
+
+.etoiles {
+
+    align-items: flex-end;
+    display: flex;
+    padding: 20px 0 0 0 ;
 }
 
 /*------------------*/
@@ -395,27 +443,27 @@ a:hover {
 .activite14 {
     width: 23%;
     box-shadow: 2px 2px 2px 1px rgb(172, 172, 172);
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 .images14 {
     height: 90%;
     width: 100%;
-    border-radius: 20px 20px 0 0;
+    border-radius: 30px 30px 0 0;
     object-fit: cover;
 }
 
 .images2 {
     width: 100%;
     height: 240px;
-    border-radius: 20px 20px 0 0;
+    border-radius: 30px 30px 0 0;
     object-fit: cover;
 }
 
 .images3 {
     width: 100%;
     height: 145px;
-    border-radius: 20px 20px 0 0;
+    border-radius: 30px 30px 0 0;
     object-fit: cover;
 }
 
@@ -429,27 +477,27 @@ a:hover {
 .images5 {
     width: 100%;
     height: 190px;
-    border-radius: 20px 20px 0 0;
+    border-radius: 30px 30px 0 0;
     object-fit: cover;
 }
 
 .images6 {
     width: 100%;
     height: 190px;
-    border-radius: 20px 20px 0 0;
+    border-radius: 30px 30px 0 0;
     object-fit: cover;
 }
 
 .activite23 {
     box-shadow: 2px 2px 2px 1px rgb(172, 172, 172);
-    border-radius: 20px 20px 0 0;
-    border-radius: 20px;
+    border-radius: 30px 30px 0 0;
+    border-radius: 30px;
 }
 
 .activite56 {
     box-shadow: 2px 2px 2px 1px rgb(172, 172, 172);
-    border-radius: 20px 20px 0 0;
-    border-radius: 20px;
+    border-radius: 30px 30px 0 0;
+    border-radius: 30px;
 }
 
 
@@ -487,21 +535,32 @@ a:hover {
     align-items: center;
 }
 
+.leTitrePrincipal {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+
+}
+
 .navLien {
-    justify-content:s;
+    justify-content: space-around;
     margin: 0px;
     width: 100%;
+    
 }
 
 
 .logo {
     justify-content: center;
     align-items: center;
+    margin: 20px 0px;
 }
 
 a {
-    font-weight: 400; margin: 40px;
-    padding: 10px 40px;
+    font-weight: 400;
+    font-size: 18px ;
+    border-bottom: 3px solid ;
+    border-color: transparent;
 }
 
 a:hover {
@@ -510,7 +569,7 @@ a:hover {
     color: #0065fc;
     transition: all .2s ease-in-out; 
     border-top: 3px transparent;
-    height: 10px;
+    height: 20px;
 }
 
 /*------------------*/
@@ -523,19 +582,17 @@ a:hover {
 }
 
 .barreDeRecherche {
-    width: 100%;
-    padding: 0 30px;
+   width: 100%;
 }
 
 .boutondeRecherche:before {
     content: "\f002";
-    font-weight: 400px;
     font-family: "Font Awesome 5 Free";
 }
 
 .boutondeRecherche {
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    min-width: 56px;
     border-radius: 15px;
 }
 
@@ -545,11 +602,19 @@ a:hover {
 /*------------------*/
 
 .filtreglobal {
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 100%;
 }
+
+.doubleFiltre2 {
+    flex-direction: column;
+    max-width: 150px;
+    align-items: flex-start;
+}
+
+
 
 /*------------------*/
 /* Hebergements + Populaires MOBILE*/
@@ -567,6 +632,7 @@ a:hover {
 
 .populaireBox {
     width: 100%;
+    border-radius: 0%;
 }
 
 /*------------------*/
@@ -577,6 +643,7 @@ a:hover {
     width: 100%;
     height: auto;
     margin-top: 40px;
+    background-color: white;
     
 }
 
@@ -590,6 +657,7 @@ a:hover {
     width: 90%;
     height: auto;
     margin: 20px;
+    max-height: 440px;
 }
 
 .ratioImgHebergement {
@@ -670,6 +738,21 @@ h3 {
 
 @media all and (min-width: 768px) and (max-width: 992px){ 
 
+/*------------------*/
+/*Search Bar TABLETTE*/
+/*------------------*/
+
+.boutondeRecherche:before {
+        content: "\f002";
+        font-weight: 400px;
+        font-family: "Font Awesome 5 Free";
+}
+    
+.boutondeRecherche {
+        width: 50px;
+        min-width: 56px;
+        border-radius: 15px;
+}
 
 /*------------------*/
 /*Filtre TABLETTE*/
@@ -677,8 +760,9 @@ h3 {
 
 
 .filtreglobal {
-    width: 100%;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
 
   }
 
@@ -769,17 +853,6 @@ h3 {
     height: 240px;
 }
 
-.boutondeRecherche:before {
-    content: "\f002";
-    font-weight: 400px;
-    font-family: "Font Awesome 5 Free";
-}
-
-.boutondeRecherche {
-    width: 55px;
-    height: 55px;
-    border-radius: 15px;
-}
 }
 
 

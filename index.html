@@ -22,24 +22,24 @@
         </div>
         <nav class="navLien"> 
                 <a href="#hebergement">Hébergements</a>
-                <a href="#activité">Activités</a>
+                <a class="paddingLeft" href="#activité">Activités</a>
         </nav> 
     </div>
 </header>
   
     <!-- Titre et Sous-titre -->
 
-    <section>
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
+    <section class="leTitrePrincipal">
+        <h1 class="marginZero">Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p class="marginZero">En plein centre ville ou en pleine nature</p>
     </section>
 
     <!-- Barre de recherche -->
 
     <div class="searchBarComplete">
         <div class="geoIcon"><i class="fa-solid fa-location-dot"></i></div>
-        <div><input class="barreDeRecherche" type="search" placeholder="Marseille, France"></div>
-        <div><button class="boutondeRecherche gras"></button></div>
+        <input class="barreDeRecherche" type="search" placeholder="Marseille, France">
+        <button class="boutondeRecherche gras"></button>
     </div>
 
     <!-- Les filtres -->
@@ -47,6 +47,7 @@
 <section class="filtreglobal gras">
         <p class="filtreStarter gras">Filtres</p>
 
+<div class="doubleFiltre">
     <div class="filtreUnitaire">
         <div class="iconsFiltres bleu"><i class="fa-solid fa-money-bill-1-wave"></i></div>
         <p class="textFiltres">Economique</p>
@@ -56,7 +57,9 @@
         <div class="iconsFiltres bleu"><i class="fa-solid fa-child-reaching"></i></div>
         <p class="textFiltres">Familial</p>
     </div>
-            
+</div>
+    
+<div class="doubleFiltre2">
     <div class="filtreUnitaire">
         <div class="iconsFiltres bleu"><i class="fa-solid fa-heart"></i></div>
         <p class="textFiltres">Romantique</p>
@@ -66,6 +69,7 @@
         <div class="iconsFiltres bleu"><i class="fa-solid fa-dog"></i></div>
         <p class="textFiltres">Animaux autorisés</p>
     </div>
+</div>
 </section>
 
     <!-- Infobulle -->
@@ -89,9 +93,9 @@
     <article class="cadresDesHotels">
         <img class="ratioImgHebergement" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Illustration de l'hotel" srcset="">
             <div class="legendes">
-                    <h3>Auberge La Cannebière</h3>
-                    <p>Nuit à partir de 25€</p>
-                <div class="etoiles">
+                <h3 class="marginZero">Auberge La Cannebière</h3>
+                    <p class="petiteMarge">Nuit à partir de 25€</p>
+                <div>
                     <i class="fa-solid fa-star bleu"></i>
                     <i class="fa-solid fa-star bleu"></i>
                     <i class="fa-solid fa-star bleu"></i>
@@ -104,9 +108,9 @@
     <article class="cadresDesHotels">
         <img class="ratioImgHebergement" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Illustration de l'hotel" srcset="">
             <div class="legendes">
-                    <h3>Hôtel du port</h3>
+                    <h3 class="margeNormalize">Hôtel du port</h3>
                     <p>Nuit à partir de 52€</p>
-                <div class="etoiles">
+                <div>
                     <i class="fa-solid fa-star bleu"></i>
                     <i class="fa-solid fa-star bleu"></i>
                     <i class="fa-solid fa-star bleu"></i>
@@ -119,9 +123,9 @@
     <article class="cadresDesHotels">
         <img class="ratioImgHebergement" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Illustration de l'hotel" srcset="">
             <div class="legendes">
-                    <h3>Hôtel les mouettes</h3>
+                    <h3 class="margeNormalize">Hôtel les mouettes</h3>
                     <p>Nuit à partir de 76€</p>
-                <div class="etoiles">
+                <div>
                     <i class="fa-solid fa-star bleu"></i>
                     <i class="fa-solid fa-star bleu"></i>
                     <i class="fa-solid fa-star bleu"></i>
@@ -136,9 +140,9 @@
     <article class="cadresDesHotels">
         <img class="ratioImgHebergement" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Illustration de l'hotel" srcset="">
             <div class="legendes">
-                    <h3>Hôtel de la mer</h3>
+                    <h3 class="margeNormalize">Hôtel de la mer</h3>
                     <p>Nuit à partir de 46€</p>
-                <div class="etoiles">
+                <div>
                     <i class="fa-solid fa-star bleu"></i>
                     <i class="fa-solid fa-star bleu"></i>
                     <i class="fa-solid fa-star bleu"></i>
@@ -151,9 +155,9 @@
     <article class="cadresDesHotels">
         <img class="ratioImgHebergement" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Illustration de l'hotel" srcset="">
             <div class="legendes">
-                    <h3>Auberge Le Panier</h3>
+                    <h3 class="margeNormalize">Auberge Le Panier</h3>
                     <p>Nuit à partir de 23€</p>
-                <div class="etoiles">
+                <div>
                     <i class="fa-solid fa-star bleu"></i>
                     <i class="fa-solid fa-star bleu"></i>
                     <i class="fa-solid fa-star bleu"></i>
@@ -166,9 +170,9 @@
     <article class="cadresDesHotels">
         <img class="ratioImgHebergement" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Illustration de l'hotel" srcset="">
             <div class="legendes">
-                    <h3>Hôtel chez Amina</h3>
+                    <h3 class="margeNormalize">Hôtel chez Amina</h3>
                     <p>Nuit à partir de 96€</p>
-                <div class="etoiles">
+                <div>
                     <i class="fa-solid fa-star bleu"></i>
                     <i class="fa-solid fa-star bleu"></i>
                     <i class="fa-solid fa-star bleu"></i>
@@ -185,43 +189,49 @@
 
 <section class="populaireBox">
     <div class="lesPlusPopulaireTitre">
-            <h1>Les plus populaires</h1>
+            <h1 class="miniMarge">Les plus populaires</h1>
             <i class="fa-solid fa-star fa"></i>
     </div>
     <div class="populaires123">
             <image class="imagesPopulaire" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Illustration de l'hotel">
-        <div class="legendes legendesTablette">
-            <h3>Hôtel le soleil du matin</h3>
-            <p>Nuit à partir de 128€</p>
-            <i class="fa-solid fa-star bleu"></i>
-            <i class="fa-solid fa-star bleu"></i>
-            <i class="fa-solid fa-star bleu"></i>
-            <i class="fa-solid fa-star bleu"></i>
-            <i class="fa-solid fa-star bleu"></i>
+        <div class="legendes legendesTablette ">
+            <h3 class="miniMarge">Hôtel le soleil du matin</h3>
+            <p class="petiteMargeBot">Nuit à partir de 128€</p>
+            <div class="etoiles">
+                <i class="fa-solid fa-star bleu"></i>
+                <i class="fa-solid fa-star bleu"></i>
+                <i class="fa-solid fa-star bleu"></i>
+                <i class="fa-solid fa-star bleu"></i>
+                <i class="fa-solid fa-star gris"></i>
+            </div>
         </div>
     </div>
     <div class="populaires123">
             <image class="imagesPopulaire" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Illustration de l'hotel">
         <div class="legendes legendesTablette ">
-            <h3>Hôtel le soleil du matin</h3>
-            <p>Nuit à partir de 71€</p>
-            <i class="fa-solid fa-star bleu"></i>
-            <i class="fa-solid fa-star bleu"></i>
-            <i class="fa-solid fa-star bleu"></i>
-            <i class="fa-solid fa-star bleu"></i>
-            <i class="fa-solid fa-star gris"></i>
+            <h3 class="miniMarge">Au coeur de l'eau Chambres d'hôtes</h3>
+            <p class="petiteMargeBot">Nuit à partir de 71€</p>
+            <div class="etoiles">
+                <i class="fa-solid fa-star bleu"></i>
+                <i class="fa-solid fa-star bleu"></i>
+                <i class="fa-solid fa-star bleu"></i>
+                <i class="fa-solid fa-star bleu"></i>
+                <i class="fa-solid fa-star gris"></i>
+            </div>
         </div>
     </div>
     <div class="populaires123">
             <image class="imagesPopulaire" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Illustration de l'hotel">
         <div class="legendes legendesTablette">
-            <h3>Hôtel tout bleu et Blanc</h3>
-            <p>Nuit à partir de 68€</p>
-            <i class="fa-solid fa-star bleu"></i>
-            <i class="fa-solid fa-star bleu"></i>
-            <i class="fa-solid fa-star bleu"></i>
-            <i class="fa-solid fa-star bleu"></i>
-            <i class="fa-solid fa-star gris"></i>
+            <h3 class="miniMarge">Hôtel tout bleu et Blanc</h3>
+            <p class="petiteMargeBot">Nuit à partir de 68€</p>
+            <div class="etoiles">
+                <i class="fa-solid fa-star bleu"></i>
+                <i class="fa-solid fa-star bleu"></i>
+                <i class="fa-solid fa-star bleu"></i>
+                <i class="fa-solid fa-star bleu"></i>
+                <i class="fa-solid fa-star gris"></i>
+            </div>
         </div>
     </div>
 </section>
