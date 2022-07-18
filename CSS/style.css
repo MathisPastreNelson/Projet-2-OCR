@@ -354,8 +354,7 @@ a:hover {
     border-radius: 30px;
     padding: 3px;
     box-shadow: 2px 2px 2px 1px rgb(172, 172, 172);
-    max-height: 246px;
-    min-height: 246px;
+    height: 230px;
 }
 
 .ratioImgHebergement {
@@ -374,7 +373,7 @@ a:hover {
 
 .legendes {
     font-size:90%;
-    margin: 0 10px;
+    margin: 00px 10px;
     padding: 0 0 10px;
 }
 
@@ -509,10 +508,15 @@ a:hover {
 
 .footerDisposition {
     display: flex;
-    justify-content: space-between;
     background-color: #F2F2F2;
-    margin-top: 80px;
-    padding-right: 25%;
+    margin-top: 70px;
+    width: 100%;
+    padding: 30px 0;
+    justify-content: space-around;
+}
+
+.footerDisposition > * {
+    flex-basis: 30%;
 }
 
 
@@ -655,7 +659,7 @@ a:hover {
 
 .cadresDesHotels {
     width: 90%;
-    height: 348px;
+    height: 338px;
     margin: 20px;
     max-height: 440px;
 }
