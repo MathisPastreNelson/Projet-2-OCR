@@ -279,7 +279,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     height: 45px;
-    border: 3px solid #f2f2f2;
+    border: 1px solid #d9d9d9;
     background-color: white;
     border-radius: 30px 30px;
     transition: all .2s ease-in-out; 
@@ -293,7 +293,7 @@ a:hover {
 }
 
 .iconsFiltres {
-    background-color: #f2f2f2;
+    background-color: #DEEBFF;
     height: 47px;
     width: 47px;
     display: flex;
@@ -425,7 +425,7 @@ a:hover {
 
 .legendesTablette {
     font-size: 80%;
-    margin-left: 1rem;
+    margin-left: 0.8rem;
 }
 
 .populaires123 {
