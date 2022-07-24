@@ -138,7 +138,7 @@ h1 {
     justify-content: space-between;
 }
 
-a {
+.navLien>a {
     border-top: 3px solid;
     border-bottom: 3px solid;
     border-color: transparent;
@@ -153,7 +153,7 @@ a {
     justify-content: end;
 }
 
-a:hover {
+.navLien>a:hover {
     border-top: 3px solid;
     border-bottom: 3px solid;
     border-color: #0065fc;
@@ -373,7 +373,8 @@ a:hover {
     border-radius: 20px;
     padding: 5px;
     box-shadow: 2px 2px 2px 1px rgb(172, 172, 172);
-    cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 
 .ratioImgHebergement {
@@ -443,7 +444,9 @@ a:hover {
     box-shadow: 2px 2px 2px 1px rgb(172, 172, 172);
     height: 140px;
     margin-top: 2em;
-    cursor: pointer;
+    text-decoration: none;
+    color: black;
+
 }
 
 .imagesPopulaire {
@@ -476,7 +479,8 @@ a:hover {
     width: 22%;
     box-shadow: 2px 2px 2px 1px rgb(172, 172, 172);
     border-radius: 20px;
-    cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 
 .images14 {
@@ -524,14 +528,16 @@ a:hover {
 .activite23 {
     box-shadow: 2px 2px 2px 1px rgb(172, 172, 172);
     border-radius: 20px;
-    cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 
 .activite56 {
     box-shadow: 2px 2px 2px 1px rgb(172, 172, 172);
     border-radius: 20px 20px 0 0;
     border-radius: 20px;
-    cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -612,14 +618,14 @@ a:hover {
         width: 20%;
     }
 
-    a {
+    .navLien>a {
         font-size: 18px;
         border-bottom: 3px solid #F2F2F2;
         justify-content: center;
         padding-bottom: 20px;
     }
 
-    a:hover {
+    .navLien>a:hover {
         border-bottom: 3px solid;
         border-color: #0065fc;
         color: #0065fc;
